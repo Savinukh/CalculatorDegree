@@ -6,11 +6,19 @@ namespace CalCulatorDegree
     {
         static void Main()
         {
+<<<<<<< HEAD
             int i = 1;
             do
             {
                 Console.WriteLine("Что вы хотите перевести (Цельсия в Фаренгейт) - 1, (Фаренгейт в Цельсия) - 0?");
                 int answer = int.Parse(Console.ReadLine());
+=======
+            Console.WriteLine("Что вы хотите перевести (Цельсия в Фаренгейт) - 1, (Фаренгейт в Цельсия) - 0?");
+            int answer = int.Parse(Console.ReadLine());
+            int i = 0;
+            do
+            {
+>>>>>>> main
                 switch (answer)
                 {
                     case 1:
@@ -20,6 +28,7 @@ namespace CalCulatorDegree
                         MethodFahrenheitToCelsius();
                         break;
                 }
+<<<<<<< HEAD
                 Console.WriteLine("Хотите поробовать еще раз? да - 1, нет - 0");
                  i = int.Parse(Console.ReadLine());
                 Console.Clear();
@@ -28,6 +37,16 @@ namespace CalCulatorDegree
             while (i != 0);
             Console.WriteLine("Программа закончена");
             Console.ReadKey();
+=======
+                Console.WriteLine("Хотите поробывать еще раз? да - 1, нет - 0");
+                int answ = int.Parse(Console.ReadLine());
+                Console.Clear();
+                Main();
+
+
+            }
+            while (i == 1);
+>>>>>>> main
             
                 
         }
@@ -49,6 +68,10 @@ namespace CalCulatorDegree
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("----------------------------------------------------");
             Console.ResetColor();
+<<<<<<< HEAD
+=======
+            Console.ReadKey();
+>>>>>>> main
             Console.Write("Введите температуру по шкале Фаренгейта:\t");
             int temperature = int.Parse(Console.ReadLine());
             double result = (temperature - 32) / 1.8;
